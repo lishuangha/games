@@ -5,6 +5,51 @@
 	<title>Document</title>
 </head>
 <body>
-	
 </body>
+<script>
+     var newArray = new Array();
+    (function init(){
+        for(let i=0;i<4;i++){
+            newArray[i]=new Array();
+            for(let j=0;j<4;j++){
+                newArray[i][j]=0;
+            }
+        }
+    })();
+    function initNum(){
+    let a = Math.random();if(a>0.5){a=2;}else{a=4;}
+    let b = parseInt(Math.random()*4);
+    let c = parseInt(Math.random()*4);    
+    let d = Math.random();if(d>0.5){d=2;}else{d=4;}
+    let e = parseInt(Math.random()*4);
+    let f = parseInt(Math.random()*4);
+
+    // 一个数的可能
+
+    newArray[b][c]=a; 
+    newArray[e][f]=d;
+    };
+    initNum();
+
+    window.onkeydown = function(e){
+        // console.log(e.keyCode);
+        if(e.keyCode == 37){ // press left
+            for(let i=0;i<4;i++){ 
+                for(let j=0;j<4;j++){
+                    // 1.from left to right one by one  2.leftvalue 1.>< 2.null 3.=
+             
+                }
+            }
+        }
+    }
+   
+    // 
+    function bigOrSmall(a,b){
+       if(a=0){
+           
+       }
+    }
+
+    console.log(newArray);
+</script>
 </html>
